@@ -7,6 +7,9 @@ pipeline {
                 echo 'Starting Groovy Hello World...'
                 // Run the Groovy script
                 sh 'groovy hello.groovy'
+
+                //Run the second groovy script
+                sh 'groovy addnumbers.groovy 5 6'
             }
         }
     }

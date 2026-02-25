@@ -10,6 +10,9 @@ pipeline {
 
                 //Run the second groovy script
                 sh 'groovy addnumbers.groovy 5 6'
+
+                //Run the Python Script
+                sh 'hello_world.py'
             }
         }
     }

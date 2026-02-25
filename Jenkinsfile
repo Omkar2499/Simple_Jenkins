@@ -11,8 +11,15 @@ pipeline {
                 //Run the second groovy script
                 sh 'groovy addnumbers.groovy 5 6'
 
-                //Run the Python Script
-                sh 'python3 hello_world.py'
+          
+            }
+        }
+        stage('Run Python'){
+            steps{
+                echo "Entered in this"
+
+                //Run python script
+                sh 'python3 hello_world.pys'
             }
         }
     }

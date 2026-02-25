@@ -19,7 +19,7 @@ pipeline {
                 echo "Entered in this"
 
                 //Run python script
-                sh 'python3 hello_world.pys'
+                sh 'python3 hello_world.py'
             }
         }
     }

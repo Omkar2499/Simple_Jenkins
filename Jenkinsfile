@@ -16,6 +16,8 @@ pipeline {
         }
         stage('Run Python'){
             steps{
+
+                agent {docker {image 'python:3.10-slim'}}
                 echo "Entered in this"
 
                 //Run python script

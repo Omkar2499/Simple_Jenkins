@@ -11,6 +11,9 @@ pipeline {
                 //Run the second groovy script
                 sh 'groovy addnumbers.groovy 5 6'
 
+                //Run Groovy GUI script
+                sh 'groovy gui.groovy'
+
           
             }
         }

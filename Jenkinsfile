@@ -12,7 +12,7 @@ pipeline {
                 sh 'groovy addnumbers.groovy 5 6'
 
                 //Run the Python Script
-                sh 'hello_world.py'
+                sh 'python3 hello_world.py'
             }
         }
     }

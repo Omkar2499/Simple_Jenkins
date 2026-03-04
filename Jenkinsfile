@@ -12,7 +12,7 @@ pipeline {
                 sh 'groovy addnumbers.groovy 5 6'
 
                 //Run Groovy GUI script
-
+    
           
             }
         }
@@ -24,6 +24,14 @@ pipeline {
 
                 //Run python script
                 sh 'python3 hello_world.py'
+
+                
+            }
+        }
+
+        stage("1/8 Run Groovy"){
+            steps{
+                sh 'groovy groovy_scripting/web_scraping.groovy'
             }
         }
     }

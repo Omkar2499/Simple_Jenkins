@@ -32,6 +32,9 @@ pipeline {
         stage("1/8 Run Groovy"){
             steps{
                 sh 'groovy groovy_scripting/web_scraping.groovy'
+
+
+                sh 'groovy groovy_scripting/hello.groovy'
             }
         }
     }
